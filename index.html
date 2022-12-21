@@ -9,10 +9,18 @@
         <script type="text/jsx">
             const app = document.getElementById('app');
 
-            ReactDOM.render(
-                <h1>Next.js Foundations</h1>,
-                app
-            );
+            function Header() {
+                return <h1>Next.js Foundations</h1>;
+            }
+            function HomePage() {
+                return (
+                    <div>
+                        <Header />
+                    </div>
+                );
+            }
+
+            ReactDOM.render(<HomePage />, app);
         </script>
     </body>
 </html>
